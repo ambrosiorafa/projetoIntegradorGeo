@@ -2,7 +2,7 @@
 $action = (isset($_REQUEST['action'])) ? $_REQUEST['action'] : "";
 include '../Model/Usuario.php';
 $usuario = new Usuario();
-
+//switch case
 switch ($action) {
 	case 'inserirUsuario':
 			$listaDeInstituicoes = $usuario->listaInstituicao();
